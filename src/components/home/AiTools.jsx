@@ -29,7 +29,7 @@ const AiTools = () => {
         <h2 className="text-[#3B3B3B] text-2xl sm:text-4xl font-bold">
           Powerful AI Tools
         </h2>
-        <p className="text-[#858585] max-w-xl">
+        <p className="text-[#858585] max-w-xl max-sm:text-xs">
           Everything you need to create, enhance, and optimize your content with
           cutting-edge AI technology.
         </p>
