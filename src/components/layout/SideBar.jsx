@@ -1,4 +1,4 @@
-import { useClerk, useUser } from "@clerk/clerk-react";
+import { Protect, useClerk, useUser } from "@clerk/clerk-react";
 import {
   Eraser,
   FileText,
@@ -105,7 +105,9 @@ const SideBar = ({ sideBar, setSideBar }) => {
           <img src={user.imageUrl} alt="icon" className="w-8 round-full" />
           <div className="">
             <h1 className="text-sm font-medium">{user.fullName}</h1>
-            <p> </p>
+            <p className="text-xs text-gray-600">
+              <Protect plan="premium" fallback="Free">Premium</Protect> plan
+             </p>
           </div>
         </div>
         <LogOut
